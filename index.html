@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<style>
+.navbar{
+  position:sticky;
+  top: 0%;
+
+  }
+ #navbarScroll
+ {
+  margin-left: 25VH;
+ }
+ .nav-item{
+   margin-left: 5VH;
+}
+.navbar-brand{
+  color: blue;
+  font-style:bold;
+  font-weight: 800;
+  letter-spacing: 3px;
+  
+}
+ul li a:hover{
+  text-transform:uppercase ;
+  text-decoration: underline;
+  color: chocolate;
+
+}
+ .content{
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 15vh;
+
+
+}
+.left{
+  width: 30%;
+  height:50vh;
+  display: inline-block;
+  margin-left: 8vh;
+  margin-top: 15vh;
+}
+.left span{
+  font-size: 20px;
+  color: orange;
+}
+.left p{
+  font-family: cursive;
+}
+.right{
+  width: 30%;
+  display: inline-block;
+  margin-right: 10vh;
+}
+.right img{
+  transform: rotateY(180deg);
+}
+button{
+  border:1.5px  solid black;
+  border-radius: 2vh;
+  background-color: rgb(13, 203, 241);
+}
+.aftercontent{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+}
+.box{
+  width: 40%;
+  height: 50vh;
+  margin-top: 4vh;
+}
+.btnn{
+  background-color: orange;
+  margin-top: 3vh;
+}
+.box:hover{
+  background-color: azure;
+}
+.box h4{
+  text-align: center;
+  margin: 3vh;
+}
+#contact{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:rgb(242, 239, 245);
+
+}
+#contact form{
+  justify-content: center;
+  align-items: center;
+  padding:4vh;
+}
+#contact input{
+  border: 1px solid black;
+  border-radius:10px;
+}
+input::placeholder{
+  text-align: center;
+}
+.sbmt{
+  border: 2px solid black;
+  background-color: rgb(39, 113, 233);
+  width: 15vh;
+
+
+
+}
+
+footer{
+  height: 7vh;
+  background-color: rgb(228, 228, 226);
+  justify-content: center;
+  align-items: center;
+}
+footer p{
+  text-align: center;
+  padding-top:2vh;
+  
+}
+@media screen and (max-width: 680px) {
+  .box{
+    width: 100%;
+    }
+    
+   
+    .content{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5vh;
+    }
+    .aftercontent{
+      justify-content: center;
+      align-items: center;
+    }
+    .box{
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+    .right img{
+      display: none;
+    }
+    .left{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+  
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">AFEEF</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span clanav-itemss="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="">
+            <a class="nav-link active" aria-current="page" href="">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#abt" >ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#srv">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="content" id="abt">
+    <div class="left">
+      <span>Full stack Java developer AFEEF HASHIM</span>
+      <p>I’m a software engineer who loves creating websites and apps. I believe that you have to see the big picture when building something, which is why I enjoy working with a team. Let’s make your site better together.</p>
+      <button>Learn More</button>
+      <a href="https://wa.link/lm4nsj"><button>Contact Me</button></a>
+      
+    </div>
+    <div class="right">
+      <img src="https://zululandobserver.co.za/wp-content/uploads/sites/56/2022/12/side-view-male-hacker-with-gloves-laptop.png" width="100%">
+    </div>
+
+  </div>
+  <div class="aftercontent" id="srv">
+    <div class="box">
+      <h4>Web Developer</h4>
+      Highly skilled and versatile web developer with a passion for crafting dynamic and user-centric web experiences. With 5 yearsof  hands-on experience in front-end and back-end development, I possess a comprehensive understanding of the full web development lifecycle. My expertise lies in leveraging cutting-edge technologies and frameworks to deliver scalable, responsive, and visually stunning web solutions tailored to meet client objectives.<br>
+      <button class="btnn">Learn More</button>
+      <button class="btnn">Contact Me</button>
+    </div>
+    <div class="box">
+      <h4>Full Stack Java Developer</h4>
+      Dynamic and results-driven Java Full Stack Developer with a proven track record of delivering robust, scalable, and high-performance web applications. Equipped with 6 years of experience in both front-end and back-end development, I excel in leveraging Java-based technologies and frameworks to create seamless end-to-end solutions. With a passion for innovation and a commitment to excellence, I am dedicated to pushing the boundaries of web development to drive business success.
+
+      <br>
+      <button class="btnn">Learn More</button>
+      <button class="btnn">Contact Me</button>
+    </div>
+    <div class="box">
+      <h4>Kannada Singer</h4>
+      As a Kannada singer, I am honored to be a part of this vibrant musical ecosystem, where every song is a celebration of life, love, and the human experience. With each performance, I aim to touch hearts, inspire minds, and contribute to the enduring legacy of Kannada music. Kannada music holds a special place in my heart, not just as an art form but as a reflection of Karnataka's rich cultural heritage. <br>
+      <button class="btnn">Learn More</button>
+      <button class="btnn">Contact Me</button>
+    </div>
+    <div class="box">
+      <h4>Hipop Dancer</h4>
+      Dance has always been my language of self-expression, but it was hip-hop that truly spoke to my soul. From the streets to the stage, I've honed my craft, immersing myself in the dynamic world of hip-hop culture. It's more than just a dance style; it's a lifestyle—a way of thinking, moving, and connecting with the world around me.
+      <br>
+      <button class="btnn">Learn More</button>
+      <a href="https://www.google.com/"><button class="btnn">Contact Me</button></a>
+    </div>
+  </div>
+  <div id="contact">
+    <h4 id="hd">Join with me</h4>
+    <form>
+      <label>Enter Your Name</label><br>
+      <input type="text" placeholder="Enter your name"><br>
+      <label>Enter Your Email</label><br>
+      <input type="text" placeholder="Enter your email"><br>
+      <label>Enter Your Message</label><br>
+      <input type="text" placeholder="Enter your message"><br><br>
+      <input type="submit" class="sbmt">
+    </form>
+  </div>
+<footer>
+   <p>@Copyright||privacy2024:AFEEF HASHIM CEO OF GOOGLE</p>
+
+</footer>
+<script>
+  function function1(){
+    alert("hello");
+    
+  }
+</script>
+</body>
+</html>
